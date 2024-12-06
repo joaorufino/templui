@@ -3,11 +3,13 @@ package label
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/tooltip"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/tooltip"
 )
 
 const StyleInline style.Style = 1 << 8
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{

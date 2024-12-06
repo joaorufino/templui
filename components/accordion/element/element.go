@@ -2,8 +2,10 @@ package element
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{

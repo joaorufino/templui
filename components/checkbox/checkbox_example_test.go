@@ -4,9 +4,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/checkbox"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/skin"
+	"github.com/joaorufino/templui/components/checkbox"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/skin"
 )
 
 func ExampleC() {

@@ -2,11 +2,11 @@ package control
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/button"
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/sidebar"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/button"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/sidebar"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
 
 type D struct {

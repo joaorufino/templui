@@ -5,13 +5,15 @@ package icon
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
 
 const (
 	StyleBorder style.Style = 1 << 8
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -91,4 +93,8 @@ func (def D) size() size.Size {
 
 func (def D) class() string {
 	return style.CSSClass(def.Style|style.Size(def.size()), "icon", def.CustomStyle)
+}
+
+func (def D) IsZero() bool {
+	return def.Icon == ""
 }

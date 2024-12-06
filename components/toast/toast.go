@@ -5,11 +5,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/toast/container"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/toast/container"
 	"github.com/rs/xid"
 )
+
+var DEFAULTS = D{}
 
 const (
 	StyleOK      style.Style = 1 << 8

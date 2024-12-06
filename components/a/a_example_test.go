@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/a"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/a"
 )
 
 func ExampleC() {

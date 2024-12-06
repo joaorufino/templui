@@ -4,13 +4,15 @@ import (
 	"strconv"
 
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/footer"
-	"github.com/jfbus/templui/components/navbar"
-	"github.com/jfbus/templui/components/sidebar"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/toast/container"
+	"github.com/joaorufino/templui/components/footer"
+	"github.com/joaorufino/templui/components/navbar"
+	"github.com/joaorufino/templui/components/sidebar"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/toast/container"
 )
+
+var DEFAULTS = D{}
 
 type NavbarHeight size.Size
 

@@ -1,9 +1,11 @@
 package section
 
 import (
-	"github.com/jfbus/templui/components/a"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/a"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{

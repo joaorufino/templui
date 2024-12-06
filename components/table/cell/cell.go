@@ -1,6 +1,15 @@
 package cell
 
-import "github.com/jfbus/templui/components/style"
+import "github.com/joaorufino/templui/components/style"
+
+var DEFAULTS = D{
+	Header:  true,
+	Content: []string{"one", "two", "three"},
+	ColSpan: "",
+	CustomStyle: style.Custom{
+		"cell": style.D{style.Add("text-sm")},
+	},
+}
 
 type D struct {
 	Header  bool

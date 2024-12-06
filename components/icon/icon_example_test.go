@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/icon"
+	"github.com/joaorufino/templui/components/icon"
 )
 
 func ExampleC() {

@@ -3,7 +3,7 @@ package style_test
 import (
 	"testing"
 
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/style"
 	"github.com/stretchr/testify/assert"
 )
 

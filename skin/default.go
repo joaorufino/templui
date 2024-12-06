@@ -1,14 +1,14 @@
 package skin
 
 import (
-	"github.com/jfbus/templui/components/button"
-	"github.com/jfbus/templui/components/checkboxgroup"
-	"github.com/jfbus/templui/components/footer"
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/radiogroup"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/table"
-	"github.com/jfbus/templui/components/toast"
+	"github.com/joaorufino/templui/components/button"
+	"github.com/joaorufino/templui/components/checkboxgroup"
+	"github.com/joaorufino/templui/components/footer"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/radiogroup"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/table"
+	"github.com/joaorufino/templui/components/toast"
 )
 
 var Default = style.Defaults{

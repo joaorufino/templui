@@ -1,2 +1,7 @@
 .DS_Store
 components/icon/internal/build/node_modules
+
+*storybook.log
+node_modules
+storybook-static
+.storybook

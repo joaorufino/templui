@@ -4,10 +4,10 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/radio"
-	"github.com/jfbus/templui/components/radiogroup"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/skin"
+	"github.com/joaorufino/templui/components/radio"
+	"github.com/joaorufino/templui/components/radiogroup"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/skin"
 )
 
 func ExampleC() {

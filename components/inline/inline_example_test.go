@@ -5,12 +5,12 @@ import (
 	"os"
 
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/inline"
-	"github.com/jfbus/templui/components/input"
-	"github.com/jfbus/templui/components/label"
-	"github.com/jfbus/templui/components/position"
-	"github.com/jfbus/templui/components/size"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/inline"
+	"github.com/joaorufino/templui/components/input"
+	"github.com/joaorufino/templui/components/label"
+	"github.com/joaorufino/templui/components/position"
+	"github.com/joaorufino/templui/components/size"
 )
 
 func ExampleC() {

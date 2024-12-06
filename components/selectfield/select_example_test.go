@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/selectfield"
-	"github.com/jfbus/templui/components/selectfield/option"
+	"github.com/joaorufino/templui/components/selectfield"
+	"github.com/joaorufino/templui/components/selectfield/option"
 )
 
 func ExampleC() {

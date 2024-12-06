@@ -2,10 +2,12 @@ package sidebar
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/style"
 )
 
 var DefaultID = "sidebar"
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -24,7 +26,7 @@ func init() {
 
 type D struct {
 	ID string
-	//playground:import:github.com/jfbus/templui/components/button
+	//playground:import:github.com/joaorufino/templui/components/button
 	//playground:default:button.C(button.D{Label:"Button"})
 	Content templ.Component
 	// CustomStyle defines a custom style.

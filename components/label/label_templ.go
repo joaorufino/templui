@@ -8,7 +8,7 @@ package label
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/jfbus/templui/components/text"
+import "github.com/joaorufino/templui/components/text"
 
 func C(def D) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {

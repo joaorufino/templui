@@ -2,16 +2,18 @@ package footer
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/a"
-	"github.com/jfbus/templui/components/footer/section"
-	"github.com/jfbus/templui/components/social"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/a"
+	"github.com/joaorufino/templui/components/footer/section"
+	"github.com/joaorufino/templui/components/social"
+	"github.com/joaorufino/templui/components/style"
 )
 
 const (
 	StyleSticky style.Style = 1 << 8
 	StyleBorder style.Style = 1 << 9
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -62,8 +64,8 @@ type D struct {
 	Copyright templ.Component
 	Brand     templ.Component
 	// Sections can either be a []section.D or a []a.D slice.
-	//playground:import:github.com/jfbus/templui/components/a
-	//playground:import:github.com/jfbus/templui/components/footer/section
+	//playground:import:github.com/joaorufino/templui/components/a
+	//playground:import:github.com/joaorufino/templui/components/footer/section
 	//playground:default:[]section.D{{Title:"Section 1", Links: []a.D{{Text: "Link 1"},{Text: "Link 2"}}}, {Title:"Section 2", Links: []a.D{{Text: "Link 1"},{Text: "Link 2"}}}, {Title:"Section 3", Links: []a.D{{Text: "Link 1"},{Text: "Link 2"}}}}
 	Sections any
 	Social   []social.D

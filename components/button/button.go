@@ -3,11 +3,13 @@ package button
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/position"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/tooltip"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/tooltip"
+	"github.com/joaorufino/templui/components/position"
 )
+
+var DEFAULTS = D{}
 
 type Type string
 

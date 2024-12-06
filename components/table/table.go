@@ -2,8 +2,8 @@
 package table
 
 import (
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/table/row"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/table/row"
 )
 
 const (
@@ -11,6 +11,16 @@ const (
 	StyleNoBorder          style.Style = 1 << 9
 	StyleAddHighlightHover style.Style = 1 << 10
 )
+
+var DEFAULTS = D{
+	Style:  style.Default,
+	Header: &row.DEFAULTS,
+	Rows:   []row.D{row.DEFAULTS},
+	Footer: &row.DEFAULTS,
+	CustomStyle: style.Custom{
+		"table": style.D{style.Add("text-sm")},
+	},
+}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -45,7 +55,7 @@ type D struct {
 	// Style defines the table style.
 	Style style.Style
 	// Header defines an optional header row (thead).
-	//playground:import:github.com/jfbus/templui/components/table/row
+	//playground:import:github.com/joaorufino/templui/components/table/row
 	//playground:default:&row.D{Cells: []string{"Name", "Description", ""}}
 	Header *row.D
 	// Rows defines the body rows (tbody).

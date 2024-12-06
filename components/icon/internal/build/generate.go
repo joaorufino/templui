@@ -81,7 +81,7 @@ var NameToIcon = map[string]string{`
 	}
 	file += `
 }`
-	err = os.WriteFile("icon_lucide.go", []byte(file), 0644)
+	err = os.WriteFile("icon_lucide.go", []byte(file), 0600)
 	if err != nil {
 		panic(err)
 	}

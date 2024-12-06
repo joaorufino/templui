@@ -1,7 +1,7 @@
 # TemplUI - A library of templ UI components
 
-<a href="https://pkg.go.dev/github.com/jfbus/templui"><img src="https://pkg.go.dev/badge/github.com/jfbus/templui.svg" alt="Go Reference" /></a>
-<a href="https://goreportcard.com/report/github.com/jfbus/templui"><img src="https://goreportcard.com/badge/github.com/jfbus/templui" alt="Go Report Card" /></a>
+<a href="https://pkg.go.dev/github.com/joaorufino/templui"><img src="https://pkg.go.dev/badge/github.com/joaorufino/templui.svg" alt="Go Reference" /></a>
+<a href="https://goreportcard.com/report/github.com/joaorufino/templui"><img src="https://goreportcard.com/badge/github.com/joaorufino/templui" alt="Go Report Card" /></a>
 
 A library of components to be used in a Go/templ/HTMX/Alpine.js project, loosely based on [Flowbite](https://flowbite.com/) components and the [Lucide](https://lucide.dev/) icon
 library.
@@ -19,7 +19,7 @@ Go support: 1.23+
 Install this package :
 
 ```
-go get -u github.com/jfbus/templui
+go get -u github.com/joaorufino/templui
 ```
 
 Create a new `assets_src` directory & install Flowbite:
@@ -114,7 +114,7 @@ Replace your `<body>` tag with `body.C`, and add a navbar, a sidebar and a foote
 Icons may be used by name:
 
 ```templ
-import "github.com/jfbus/templui/components/icon"
+import "github.com/joaorufino/templui/components/icon"
 
 @icon.C(icon.Flower)
 ```
@@ -122,7 +122,7 @@ import "github.com/jfbus/templui/components/icon"
 or using a definition:
 
 ```templ
-import "github.com/jfbus/templui/components/icon"
+import "github.com/joaorufino/templui/components/icon"
 
 @icon.C(icon.D{
   Icon:icon.Flower,
@@ -170,7 +170,7 @@ Validation errors require Alpine.JS.
 ### Inline editing
 
 ```templ
-import "github.com/jfbus/templui/components/inline"
+import "github.com/joaorufino/templui/components/inline"
 
 @inline.C(inline.D{
     Value:    [your value],
@@ -197,9 +197,9 @@ Inline editing require Alpine.JS.
 
 ```templ
 import (
-    "github.com/jfbus/templui/components/table"
-    "github.com/jfbus/templui/components/table/row"
-    "github.com/jfbus/templui/components/table/cell"
+    "github.com/joaorufino/templui/components/table"
+    "github.com/joaorufino/templui/components/table/row"
+    "github.com/joaorufino/templui/components/table/cell"
 )
 
 @table.C(table.D{
@@ -289,7 +289,7 @@ button.C(button.D{
 ## Helpers
 
 ```
-import "github.com/jfbus/templui/components/helper"
+import "github.com/joaorufino/templui/components/helper"
 ```
 
 ### S
@@ -312,4 +312,4 @@ Run `go generate` again, and update your Tailwind class (`npx tailwindcss -i [..
 
 Check that your `tailwind.config.js` content section contains :
 * your templates (something like `"../views/**/*.{templ,go}"`)
-* templui (something like `"[your local path]/github.com/jfbus/templui/**/*.{templ,go}"`)
+* templui (something like `"[your local path]/github.com/joaorufino/templui/**/*.{templ,go}"`)

@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/radio"
+	"github.com/joaorufino/templui/components/radio"
 )
 
 func ExampleD() {

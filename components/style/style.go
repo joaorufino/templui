@@ -1,18 +1,26 @@
 package style
 
 import (
+	"encoding/json"
 	"regexp"
 	"strings"
 	"unicode"
 
-	"github.com/jfbus/templui/components/size"
 	"maps"
 	"slices"
+
+	"github.com/joaorufino/templui/components/size"
 )
 
 const customSelf = "self"
 
 type Opt func(string) string
+
+// MarshalJSON defines how an Opt is serialized into JSON
+func (o Opt) MarshalJSON() ([]byte, error) {
+	// Serialize as a description or identifier
+	return json.Marshal("function")
+}
 
 // Set sets/replace the class attribute.
 func Set(set string) Opt {
@@ -250,7 +258,7 @@ func CustomReplaceVariants(pattern, replace string) Custom {
 	}
 }
 
-var sizes = map[size.Size]Style{
+var Sizes = map[size.Size]Style{
 	size.XS:      SizeXS,
 	size.S:       SizeS,
 	size.Normal:  SizeNormal,
@@ -268,5 +276,5 @@ var sizes = map[size.Size]Style{
 }
 
 func Size(sz size.Size) Style {
-	return sizes[sz]
+	return Sizes[sz]
 }

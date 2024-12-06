@@ -3,11 +3,13 @@ package dropzone
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/form/validation/message"
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/form/validation/message"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -80,7 +82,7 @@ type D struct {
 	AllowedTypesMessage string
 	// Message adds a validation message below the field.
 	// Just add &message.D{} to add automatic validation.
-	//playground:import:github.com/jfbus/templui/components/form/validation/message
+	//playground:import:github.com/joaorufino/templui/components/form/validation/message
 	//playground:default:&message.D{Message: "Validation message"}
 	Message *message.D
 	// Disabled disables the input.

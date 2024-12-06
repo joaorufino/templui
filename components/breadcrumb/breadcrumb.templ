@@ -1,0 +1,44 @@
+package breadcrumb
+
+import (
+	"github.com/joaorufino/templui/components/icon"
+)
+
+
+// Render the breadcrumb component
+templ C(def D) {
+    <nav class={def.containerClass()}>
+        <ol class={def.itemClass()}>
+            for i, link := range def.Links {
+                if i > 0 {
+                    <li class={def.separatorClass()}>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </li>
+                }
+                <li class={def.itemClass()}>
+                    if i < len(def.Links)-1 && link.Href != "" {
+                        <a href={link.Href} class={def.linkClass()}>
+                            if link.Icon != "" {
+                                <span class="mr-2">
+                                    @icon.C(icon.D{Icon: link.Icon})
+                                </span>
+                            }
+                            {link.Text}
+                        </a>
+                    } else {
+                        <span class={def.currentClass()}>
+                            if link.Icon != "" {
+                                <span class="mr-2">
+                                    @icon.C(icon.D{Icon: link.Icon})
+                                </span>
+                            }
+                            {link.Text}
+                        </span>
+                    }
+                </li>
+            }
+        </ol>
+    </nav>
+}

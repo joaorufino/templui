@@ -1,6 +1,8 @@
 package container
 
-import "github.com/jfbus/templui/components/style"
+import "github.com/joaorufino/templui/components/style"
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{

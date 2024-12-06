@@ -4,18 +4,20 @@ package selectfield
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/form/validation/message"
-	_ "github.com/jfbus/templui/components/input"
-	"github.com/jfbus/templui/components/label"
-	"github.com/jfbus/templui/components/selectfield/option"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/tooltip"
+	"github.com/joaorufino/templui/components/form/validation/message"
+	_ "github.com/joaorufino/templui/components/input"
+	"github.com/joaorufino/templui/components/label"
+	"github.com/joaorufino/templui/components/selectfield/option"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/tooltip"
 )
 
 func init() {
 	style.CopyDefaults("input/input", "select/input")
 }
+
+var DEFAULTS = D{}
 
 // D is the select definition.
 type D struct {
@@ -28,7 +30,7 @@ type D struct {
 	// Label is the label (either a string or a label.D).
 	Label any
 	// Options is the list of options.
-	//playground:import:github.com/jfbus/templui/components/selectfield/option
+	//playground:import:github.com/joaorufino/templui/components/selectfield/option
 	//playground:default:[]option.D{{Label:"Select a value"},{Label:"Option 1"},{Label:"Option 2"}}
 	Options []option.D
 	// Select is the selected value.
@@ -39,7 +41,7 @@ type D struct {
 	Size size.Size
 	// Message adds a validation message below the field.
 	// Just add &message.D{} to add automatic validation.
-	//playground:import:github.com/jfbus/templui/components/form/validation/message
+	//playground:import:github.com/joaorufino/templui/components/form/validation/message
 	//playground:default:&message.D{Message: "Validation message"}
 	Message *message.D
 	// Tooltip adds a tooltip to the select.

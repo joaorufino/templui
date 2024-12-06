@@ -2,10 +2,12 @@ package dropdown
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/a"
-	"github.com/jfbus/templui/components/button"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/a"
+	"github.com/joaorufino/templui/components/button"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -23,12 +25,12 @@ func init() {
 }
 
 type D struct {
-	//playground:import:github.com/jfbus/templui/components/button
+	//playground:import:github.com/joaorufino/templui/components/button
 	//playground:default:button.D{Label:"Open dropdown"}
 	Button button.D
 	//playground:default:templ.Raw(`<div class="font-medium text-normal">Lorem ipsum</div><div class="text-sm text-gray-500">dolor sit amet</div>`)
 	Header templ.Component
-	//playground:import:github.com/jfbus/templui/components/a
+	//playground:import:github.com/joaorufino/templui/components/a
 	//playground:default:[][]a.D{{{Href:"#", Text: "Section 1 link 1"},{Href:"#", Text: "Section 1 link 2"}},{{Href:"#", Text: "Section 2 link 1"}}}
 	Links [][]a.D
 	// CustomStyle defines a custom style.

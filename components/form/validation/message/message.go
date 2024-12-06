@@ -1,9 +1,11 @@
 package message
 
 import (
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.SetDefaults(style.Defaults{

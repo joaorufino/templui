@@ -2,9 +2,9 @@
 package social
 
 import (
-	"github.com/jfbus/templui/components/icon"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/icon"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
 
 type Type int

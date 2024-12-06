@@ -3,8 +3,10 @@ package inline
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/size"
+	"github.com/joaorufino/templui/components/size"
 )
+
+var DEFAULTS = D{}
 
 // D is the definition for inline edits.
 type D struct {
@@ -13,7 +15,7 @@ type D struct {
 	// IconSize defines the size of the icon.
 	IconSize size.Size
 	// Edit is the component used to edit the value.
-	//playground:import:github.com/jfbus/templui/components/input
+	//playground:import:github.com/joaorufino/templui/components/input
 	//playground:default:input.C(input.D{Name:"edit"})
 	Edit templ.Component
 	// DefaultEdit defines if the default display is the Edit component or the text value.

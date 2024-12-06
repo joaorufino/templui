@@ -3,10 +3,12 @@ package buttongroup
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/button"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/button"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{}
 
 func init() {
 	style.CopyDefaults("button", "buttongroup/button")
@@ -27,7 +29,7 @@ func init() {
 
 type D struct {
 	// Buttons is the list of buttons to display.
-	//playground:import:github.com/jfbus/templui/components/button
+	//playground:import:github.com/joaorufino/templui/components/button
 	//playground:default:[]button.D{{Label:"A"},{Label:"B"},{Label:"C"},{Label:"D"}}
 	Buttons []button.D
 	// Size defines the buttons size (shortcut for Buttons.Size).

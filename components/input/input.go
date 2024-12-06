@@ -3,13 +3,15 @@ package input
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/form/validation/message"
-	"github.com/jfbus/templui/components/label"
-	"github.com/jfbus/templui/components/position"
-	"github.com/jfbus/templui/components/size"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/tooltip"
+	"github.com/joaorufino/templui/components/form/validation/message"
+	"github.com/joaorufino/templui/components/label"
+	"github.com/joaorufino/templui/components/position"
+	"github.com/joaorufino/templui/components/size"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/tooltip"
 )
+
+var DEFAULTS = D{}
 
 type Type string
 
@@ -67,7 +69,7 @@ type D struct {
 	Placeholder string
 	// Message adds a validation message below the field.
 	// Just add &message.D{} to add automatic validation.
-	//playground:import:github.com/jfbus/templui/components/form/validation/message
+	//playground:import:github.com/joaorufino/templui/components/form/validation/message
 	//playground:default:&message.D{Message: "Validation message"}
 	Message *message.D
 	// Disabled disables the input.

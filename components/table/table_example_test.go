@@ -5,11 +5,11 @@ import (
 	"os"
 
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/button"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/table"
-	"github.com/jfbus/templui/components/table/cell"
-	"github.com/jfbus/templui/components/table/row"
+	"github.com/joaorufino/templui/components/button"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/table"
+	"github.com/joaorufino/templui/components/table/cell"
+	"github.com/joaorufino/templui/components/table/row"
 )
 
 func ExampleC() {

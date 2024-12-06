@@ -2,9 +2,17 @@ package row
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/style"
-	"github.com/jfbus/templui/components/table/cell"
+	"github.com/joaorufino/templui/components/style"
+	"github.com/joaorufino/templui/components/table/cell"
 )
+
+var DEFAULTS = D{
+	Header: true,
+	Cells:  []string{"one", "two", "three"},
+	CustomStyle: style.Custom{
+		"row": style.D{style.Add("text-sm")},
+	},
+}
 
 // D defines a table row (tr).
 type D struct {

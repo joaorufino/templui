@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/jfbus/templui/components/checkbox"
-	"github.com/jfbus/templui/components/checkboxgroup"
+	"github.com/joaorufino/templui/components/checkbox"
+	"github.com/joaorufino/templui/components/checkboxgroup"
 )
 
 func ExampleC() {

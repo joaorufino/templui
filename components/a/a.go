@@ -2,8 +2,17 @@ package a
 
 import (
 	"github.com/a-h/templ"
-	"github.com/jfbus/templui/components/style"
+	"github.com/joaorufino/templui/components/style"
 )
+
+var DEFAULTS = D{
+	Href: "http://example.com",
+	Text: "example",
+	CustomStyle: style.Custom{
+		"a": style.D{style.Add("text-sm")},
+	},
+	Attributes: templ.Attributes{},
+}
 
 func init() {
 	style.SetDefaults(style.Defaults{
@@ -17,8 +26,10 @@ func init() {
 
 type D struct {
 	// Href is the target URL.
+	//playground:default:"https://github.com/jfbus/templui"
 	Href string
 	// Text is the link text.
+	//playground:default:"Text"
 	Text string
 	// CustomStyle defines a custom style.
 	// 	style.Custom{
